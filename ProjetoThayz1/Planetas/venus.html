@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8"> <!--identifica idioma e traduz-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--essa meta é para dispositivos mobiles, a pagina fica com portabilidade para ser visualizada corretamente em dispositivo movel -->
+
+<!--metas importantes para CEO search engine optimization (motores de busca = google)-->
+<!--1-->  <meta name="author" content="Thayz Gardini"> <!--proprietario da pagina-->
+<!--2-->  <meta name="description" content="O texto principal que vc queira q apareça na pesquisa do google"> <!--qndo pesquisarem algo no google e sua pagina for dada como indicação, no texto logo abaixo da preview do seu site, aparecerá o texto q vc digitar aqui--> 
+  
+    <title>Venus</title>
+    <link rel="stylesheet" href="style.css"> <!--dentro do head que coloca os links para css-->
+    <link rel="icon" href="/ProjetoThayz1/files/marte.jpg"> <!--colocando icone na aba-->
+    <link rel="apple-touch-icon-precomposed" href="/ProjetoThayz1/files/marte.jpg"> <!--para iphones usar esse Rel para adicionar icone na aba-->
+</head>
+<body>
+    <table> <!--tabela simples-->
+        <caption>Pessoas por idade</caption> <!--titulo da tabela-->
+        <thead>  <!--cabeçalho  da tabela--> 
+            <tr>
+              <th>Nomes</th>  <!--coluna da tabela-->
+              <th>Idades</th>
+            </tr>
+       </thead>
+
+       <tbody>  <!--corpo da tabela-->
+        <tr>
+            <td>Thayz</td>  <!--linha da tabela-->
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>Maria</td>  <!--linha da tabela-->
+            <td>29</td>
+        </tr>
+       </tbody>
+
+       <tfoot>  <!--rodapé da tabela-->
+         <tr>
+             <td>Total</td>      <!--linha da tabela-->
+             <td>2 pessoas</td>  <!--linha da tabela-->
+          </tr>
+       </tfoot>
+    </table>
+<br>
+<br>
+<!--tabela complexa-->
+<table>
+  <caption>Produzidos X Vendidos por loja</caption> 
+  
+   <colgroup> <!--tag para agrupar colunas-->
+     <col>
+     <col span="2" style="background-color: red"> <!--nesse caso usamos o span que é a mesma coisa do colspan que usamos abaixo, dentro de agrupamentos é utilizado span-->
+     <col span="2" style="background-color: blue">
+   </colgroup>
+
+  <thead>
+      <tr>  <!--1ª linha da tabela-->
+        <th rowspan="2"></th>       <!--coluna da tabela / para ocupar mais linhas em branco usar o rowspan, nesse caso, ocupe duas linha-->
+        <th colspan="2" scope="colgroup">Loja 1</th>  <!--coluna da tabela / para ocupar mais colunas em branco usar o colspan, nesse caso, ocupe duas colunas-->
+        <th colspan="2" scope="colgroup">Loja 2</th>  <!--coluna da tabela / utilizando scope colgroup para identificar que são colunas-->
+      </tr> <!--linha da tabela-->
+
+      <tr> <!--2º linha da tabela-->
+         <th scope="col">Produzidos</th>  <!--coluna da tabela / utilizando o scope para identificar que é coluna-->
+         <th scope="col">Vendidos</th>    <!--coluna da tabela-->
+         <th scope="col">Produzidos</th>  <!--coluna da tabela-->
+         <th scope="col">Vendidos</th>    <!--coluna da tabela-->
+      </tr> <!--linhas da tabela-->
+  </thead>
+
+<tbody>
+  <tr>
+    <th scope="row">vassoura</th><!--scope de linhas-->
+    <td>50</td>
+    <td>30</td>
+    <td>20</td>
+    <td>20</td>
+  </tr>
+
+<tr>
+    <th scope="row">Baldes</th><!--scope de linhas-->
+    <td>10</td>
+    <td>10</td>
+    <td>30</td>
+    <td>25</td>
+</tr>
+
+</tbody>
+</table>
+</body>
+</html>
